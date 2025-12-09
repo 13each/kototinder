@@ -34,5 +34,5 @@
 
 ## APK
 
-[Скачать APK]()
+[Скачать APK](https://github.com/13each/kototinder/releases/tag/v1)
 
