@@ -1,16 +1,38 @@
-# kototinder
+# Kototinder
 
-A new Flutter project.
+### **ФИО:** *Шелков Андрей Михайлович*  
+### **Группа:** *БПИ233*  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Описание проекта
 
-A few resources to get you started if this is your first Flutter project:
+Приложение позволяет просматривать случайных котиков в формате свайп-карточек, а также просматривать список пород с детальной информацией.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Реализованный функционал
+
+- Механика свайпов влево и вправо для оценки котиков.  
+- Подсчёт количества лайков.  
+- Открытие подробной информации о породе при нажатии на карточку кота.  
+- Экран со **списком пород** и переходом на подробности по каждой породе.  
+- Реализован fallback: если TheCatAPI недоступно или возвращает ошибку, приложение автоматически использует локальные изображения котов и заранее описанные породы.
+
+---
+
+##  Скриншоты интерфейса
+
+<p align="center">
+  <img src="examples/ex1.png" width="250" />
+  <img src="examples/ex2.png" width="250" />
+  <img src="examples/ex3.png" width="250" />
+  <img src="examples/ex4.png" width="250" />
+</p>
+
+---
+
+## APK
+
+[Скачать APK]()
+

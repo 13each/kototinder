@@ -18,14 +18,20 @@ class Breed {
   });
 
   factory Breed.fromJson(Map<String, dynamic> json) {
+    int safeInt(dynamic value) {
+      if (value is int) return value;
+      if (value is double) return value.toInt();
+      return 0;
+    }
+
     return Breed(
-      id: json['id'],
-      name: json['name'],
+      id: json['id']?.toString() ?? '',
+      name: json['name'] ?? '',
       origin: json['origin'] ?? 'Unknown',
       temperament: json['temperament'] ?? '',
       description: json['description'] ?? '',
-      energyLevel: json['energy_level'] ?? 0,
-      intelligence: json['intelligence'] ?? 0,
+      energyLevel: safeInt(json['energy_level']),
+      intelligence: safeInt(json['intelligence']),
     );
   }
 }
